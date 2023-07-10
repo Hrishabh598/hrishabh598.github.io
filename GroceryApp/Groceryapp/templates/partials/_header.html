@@ -1,0 +1,74 @@
+{% load static %}
+
+<header class="header">
+    <a href="" class="logo"><i class="fas fa fa-shopping-basket"></i>grocery</a>
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#features">features</a>
+        <a href="#products">products</a>
+        <a href="#categories">categories</a>
+        <a href="#review">review</a>
+        <a href="#blogs">blogs</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="Search....">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="{% static 'images/cat-1.png' %}" alt="">
+            <div class="content">
+                <h3>Fruits</h3>
+                <span class="price">$4.99/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="{% static 'images/cat-2.png' %}" alt="">
+            <div class="content">
+                <h3>Meat</h3>
+                <span class="price">$4.99/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="{% static 'images/cat-3.png' %}" alt="">
+            <div class="content">
+                <h3>Vegetables</h3>
+                <span class="price">$4.99/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="{% static 'images/cat-4.png' %}" alt="">
+            <div class="content">
+                <h3>Fish</h3>
+                <span class="price">$4.99/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="total">total : $24.69/- </div>
+        <a href="#" class="btn">Checkout</a>
+    </div>
+
+    <div class="info">
+        <img src="{% static 'images/pic-1.png' %}" alt="" class="profile">
+        <h3>{{ uname }}</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod distinctio adipisci eos eligendi consequatur perspiciatis culpa illum voluptatum provident, repudiandae nulla cum quam.</p>
+    </div>
+
+
+</header>
